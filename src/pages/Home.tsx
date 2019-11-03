@@ -23,12 +23,7 @@ const Home: React.FC = () => {
     </IonPage>
   );
 };
-<script type="text/babel">
-class Hello extends React.Component {
-  render() {
-    return <h1>Hello World!</h1>
-  }
-}
-</script>
+
+
 
 export default Home;
