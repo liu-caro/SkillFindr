@@ -5,7 +5,12 @@ import {
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonGrid,
+    IonRow,
+    IonItem,
+    IonLabel,
+    IonInput
   } from '@ionic/react';
   import React from 'react';
   
@@ -13,14 +18,19 @@ import {
     return (
       <IonPage>
         <IonHeader>
-          <IonToolbar>
-            <IonButtons slot="start">
-              <IonBackButton defaultHref="/home" />
-            </IonButtons>
-            <IonTitle>New Item</IonTitle>
-          </IonToolbar>
         </IonHeader>
-        <IonContent></IonContent>
+        <IonContent>
+            <h1 className="ion-text-center"> SkillFindr </h1>
+            <IonItem>
+                <IonLabel position="stacked">Email</IonLabel>
+                <IonInput></IonInput>
+            </IonItem>
+            <IonItem>
+                <IonLabel position="stacked">Password</IonLabel>
+                <IonInput type="password"></IonInput>
+            </IonItem>
+            
+        </IonContent>
       </IonPage>
     );
   };
