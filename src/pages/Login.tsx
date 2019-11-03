@@ -10,7 +10,8 @@ import {
     IonRow,
     IonItem,
     IonLabel,
-    IonInput
+    IonInput,
+    IonButton
   } from '@ionic/react';
   import React from 'react';
   
@@ -29,7 +30,11 @@ import {
                 <IonLabel position="stacked">Password</IonLabel>
                 <IonInput type="password"></IonInput>
             </IonItem>
-            
+            <IonRow align-items-center justify-content-center>
+              <IonButton>
+                Log in!
+              </IonButton>
+              </IonRow>
         </IonContent>
       </IonPage>
     );
