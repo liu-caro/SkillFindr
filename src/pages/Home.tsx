@@ -18,9 +18,17 @@ const Home: React.FC = () => {
           </a>{' '}
           will be your guide.
         </p>
+        
       </IonContent>
     </IonPage>
   );
 };
+<script type="text/babel">
+class Hello extends React.Component {
+  render() {
+    return <h1>Hello World!</h1>
+  }
+}
+</script>
 
 export default Home;
