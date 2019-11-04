@@ -1,51 +1,58 @@
 import {
-    IonBackButton,
-    IonButtons,
-    IonContent,
-    IonHeader,
+
     IonPage,
-    IonTitle,
+
     IonToolbar,
     IonGrid,
     IonRow,
-    IonItem,
-    IonLabel,
-    IonInput,
+    IonButtons,
     IonButton,
+    IonBackButton,
     IonTabBar,
-    IonTabButton
-  } from '@ionic/react';
-  import React from 'react';
+    IonTabButton,
+    IonItem,
+    IonCol
+} from '@ionic/react';
+import React from 'react';
 
-  const Event: React.FC = () => {
-      return(
-          <IonPage>
-              <IonToolbar>
-                  <IonTabBar>
-                      <IonTabButton>Event </IonTabButton>
-                      <IonTabButton>Ideas</IonTabButton>
-                      <IonTabButton>Attendees</IonTabButton>
-                  </IonTabBar>
-              </IonToolbar>
-              <h1 className="ion-text-center"> HackBeanPot </h1>
-              <IonGrid>
-                <IonRow>
-                  <img src = "src/images/hackBeanPot.png"></img>
-                  </IonRow>
-                <IonRow>
-                   <IonButton class = "ion-align-self-center">Register</IonButton>   
-                </IonRow>
-                <IonRow>
-                    Date
-                    skjskjkskjdksj
-                </IonRow>
-                <IonRow>
-                   <IonButton class = "ion-align-self-center">
-                       Create Team!</IonButton>   
-                </IonRow>
+const Event: React.FC = () => {
+    return (
+        <IonPage>
+            <IonToolbar>
+                <IonButtons slot="start">
+                    <IonBackButton defaultHref="/home" />
+                </IonButtons>
+                <IonTabBar>
+                    <IonTabButton>Event </IonTabButton>
+                    <IonTabButton>Ideas</IonTabButton>
+                    <IonTabButton>Attendees</IonTabButton>
+                </IonTabBar>
+            </IonToolbar>
+            <h1 className="ion-text-center"> HackBeanPot </h1>
+            <IonGrid>
+                <IonCol></IonCol>
+                <IonCol>
+                    <IonRow>
 
-              </IonGrid>
-          </IonPage>
-      ); 
-    };
+                    </IonRow>
+                    <IonRow>
+                        <IonButton class="ion-align-self-center">Register</IonButton>
+                    </IonRow>
+                    <IonRow >
+                        <IonItem text-center>
+                            An independently-run Boston hackathon for curious students, hackers, makers, and beginners.
+                             Thanks for coming to HackBeanpot 2019!
+                    </IonItem>
+
+                    </IonRow>
+                    <IonRow>
+                        <IonButton class="ion-align-self-center">
+                            Create Team!</IonButton>
+                    </IonRow>
+                </IonCol>
+                <IonCol></IonCol>
+            </IonGrid>
+        </IonPage>
+    );
+};
 export default Event;
