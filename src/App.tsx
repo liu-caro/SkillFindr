@@ -25,6 +25,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import RegisterEvent from './pages/RegisterEvent';
 
 const App: React.FC = () => (
   <IonApp>
@@ -33,8 +34,12 @@ const App: React.FC = () => (
         <Route path="/home" component={Home} exact={true} />
         <Route path="/new" component={NewItem} exact={true} />
         <Route path="/login" component={Login} exact={true} />
+
         <Route path="/event" component={Event} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/login" />} />
+        <Route path="/signup" component={Signup} exact={true} />
+        <Route path="/registerevent" component={RegisterEvent} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
+
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
