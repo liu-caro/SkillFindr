@@ -1,11 +1,16 @@
 import {
     IonBackButton,
+    IonInput,
     IonButtons,
     IonContent,
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonButton,
+    IonGrid,
+    IonRow,
+    IonCol
   } from '@ionic/react';
   import React from 'react';
   
@@ -17,10 +22,26 @@ import {
             <IonButtons slot="start">
               <IonBackButton defaultHref="/home" />
             </IonButtons>
-            <IonTitle>New Item</IonTitle>
+            <IonTitle>Sign Up!</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <IonContent></IonContent>
+        <IonContent>
+          <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
+          <div>Email <IonInput placeholder="Enter Input"></IonInput> </div>
+          <div>Password <IonInput placeholder="Enter Input"></IonInput> </div>
+          <div>Confirm Password <IonInput placeholder="Enter Input"></IonInput> </div>
+
+          <IonGrid>
+            <IonRow>
+              <IonCol>
+                <IonButton expand="block">Sign Up!</IonButton>
+              </IonCol>
+              <IonCol>
+                <IonButton expand="block">Cancel</IonButton>
+              </IonCol>
+            </IonRow>
+          </IonGrid>
+        </IonContent>
       </IonPage>
     );
   };
