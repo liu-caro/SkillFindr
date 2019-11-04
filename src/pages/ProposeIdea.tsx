@@ -31,23 +31,17 @@ const ProposeIdea: React.FC = () => {
                     <IonButtons slot="start">
                         <IonBackButton defaultHref="/home" />
                     </IonButtons>
-                    <IonTitle>Create Profile</IonTitle>
+                    <IonTitle>Propose an Idea</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
             <IonContent>
-                <IonList>
-                    <IonItem>
-                        <IonThumbnail slot="start">
-                            <IonImg src="images/add.png" />
-                        </IonThumbnail>
-                        <IonLabel></IonLabel>
-                    </IonItem>
-                </IonList>
-
-                <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Skills <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Bio <IonInput placeholder="Enter Input"></IonInput> </div>
+                
+                <div>Name of Project<IonInput placeholder="Enter Input"></IonInput> </div>
+                <div>Deescription <IonInput placeholder="Enter Input"></IonInput> </div>
+                <div>Number of Team Members <IonInput type="number" placeholder="Enter Input"></IonInput> </div>
+                <div>Skills Needed <IonInput placeholder="Enter Input"></IonInput> </div>
+                <div>Your Role in This <IonInput placeholder="Enter Input"></IonInput> </div>
 
                 <IonGrid>
                     <IonRow>

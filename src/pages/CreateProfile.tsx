@@ -11,12 +11,12 @@ import {
     IonGrid,
     IonRow,
     IonCol,
-    IonList,
     IonItem,
     IonThumbnail,
-    IonImg,
     IonLabel,
+    IonIcon,
 } from '@ionic/react';
+import plus from "../images/plus.png";
 import React from 'react';
 
 const CreateProfile: React.FC = () => {
@@ -31,13 +31,8 @@ const CreateProfile: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-                <IonItem>
-                    <IonThumbnail slot="start">
-                        <IonImg src="src/images/add.png" />
-                    </IonThumbnail>
-                    <IonLabel></IonLabel>
-                </IonItem>
-
+                
+                <IonIcon icon={plus} />
                 <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
                 <div>Skills <IonInput placeholder="Enter Input"></IonInput> </div>
                 <div>Bio <IonInput placeholder="Enter Input"></IonInput> </div>

@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import RegisterEvent from './pages/RegisterEvent';
 import CreateProfile from './pages/CreateProfile';
+import ProposeIdea from './pages/ProposeIdea';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -40,7 +41,7 @@ const App: React.FC = () => (
         <Route path="/signup" component={Signup} exact={true} />
         <Route path="/registerevent" component={RegisterEvent} exact={true} />
         <Route path="/createprofile" component={CreateProfile} exact={true} />
-        
+        <Route path="/propose-idea" component={ProposeIdea} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
