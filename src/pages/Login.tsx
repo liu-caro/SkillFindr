@@ -3,9 +3,9 @@ import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, I
   import React from 'react';
 
   import '../stylesheets/Login.css'
-import { Link } from 'react-router-dom';
+import { Link, RouteComponentProps } from 'react-router-dom';
   
-  const Login: React.FC = () => {
+  const Login: React.FC <RouteComponentProps> = (props) =>   {
     return (
       <IonPage>
         <IonHeader>

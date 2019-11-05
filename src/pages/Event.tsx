@@ -16,10 +16,10 @@ import {
 
 } from '@ionic/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, RouteComponentProps } from 'react-router-dom';
 import HackBeanpot from '../images/hackbeanpot.png';
 
-const Event: React.FC = () => {
+const Event: React.FC <RouteComponentProps> = (props) =>   {
     return (
         <IonPage>
             <IonToolbar>
@@ -41,7 +41,7 @@ const Event: React.FC = () => {
                       {/* <IonImg src = {HackBeanpot} alt = "HackBeanpot" height="80"/> */}
                     </IonRow>
                     <IonRow class="ion-justify-content-center">
-                        <IonButton>Register</IonButton>
+                        <IonButton onClick={() => props.history.push('/register')}>Register</IonButton>
                     </IonRow>
                     <IonRow >
                         <IonItem text-center>

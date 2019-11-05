@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon, IonSearchbar, IonThumbnail, IonRow } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon, IonSearchbar, IonThumbnail, IonRow, IonButton } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { add, person } from 'ionicons/icons';
@@ -11,10 +11,11 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonRow>
+          <IonButton slot="end" onClick={() => props.history.push('/profile')}>
+            <IonIcon icon={person}/>
+          </IonButton>
           <IonTitle>Upcoming Events</IonTitle>
-          <IonIcon icon={person} className="ion-margin-right"/>
-          </IonRow>
+
         </IonToolbar>
         <IonToolbar>
         <IonSearchbar></IonSearchbar>

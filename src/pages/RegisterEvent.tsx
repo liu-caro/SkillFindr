@@ -32,7 +32,7 @@ const RegisterEvent: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonContent>
-          <div>Register for </div> NAME
+          <h2>Register for HackBeanpot</h2> 
          
           <IonList>
             <IonRadioGroup>
@@ -82,16 +82,16 @@ const RegisterEvent: React.FC = () => {
             </IonRadioGroup>
           </IonList>
           
-          <div>If you selected other, please write in where you head about the event here:</div>
+          <div>If you selected other, please write in where you heard about the event here:</div>
           <IonInput placeholder="Enter Input"></IonInput>
 
           <IonGrid>
             <IonRow>
               <IonCol>
-                <IonButton expand="block">Register</IonButton>
+                <IonButton expand="block" color="medium">Cancel</IonButton>
               </IonCol>
               <IonCol>
-                <IonButton expand="block">Cancel</IonButton>
+                <IonButton expand="block" routerLink="/event">Register</IonButton>
               </IonCol>
             </IonRow>
           </IonGrid>

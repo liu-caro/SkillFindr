@@ -19,11 +19,11 @@ import {
         <IonHeader>
 
             <IonToolbar>
-                {/* <IonButtons slot="start">
-                     <IonBackButton ></IonBackButton>
-                </IonButtons> */}
+                <IonButtons slot="start">
+                     <IonBackButton defaultHref="/home"></IonBackButton>
+                </IonButtons>
                 <IonButtons slot="end">
-                    <IonButton>Edit</IonButton>
+                    <IonButton routerLink="/create-profile">Edit</IonButton>
                 </IonButtons>
             </IonToolbar>
         </IonHeader>
