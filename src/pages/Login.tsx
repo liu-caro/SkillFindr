@@ -1,4 +1,4 @@
-import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow} from '@ionic/react';
+import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow, IonList, IonDatetime} from '@ionic/react';
   import React from 'react';
 
   import '../stylesheets/Login.css'
@@ -19,9 +19,8 @@ import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, I
                 <IonInput type="password"></IonInput>
             </IonItem>
 
-
-            <IonRow align-items-center justify-content-center>
-              <IonButton >
+            <IonRow className="ion-justify-content-center ion-padding-top">
+              <IonButton routerLink="/home">
                 Log in
               </IonButton>
             </IonRow>

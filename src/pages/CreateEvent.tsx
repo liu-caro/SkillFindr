@@ -12,6 +12,9 @@ import {
     IonInput,
     IonDatetime,
     IonTextarea,
+    IonLabel,
+    IonRow,
+    IonCol,
 
 } from '@ionic/react';
 import React from 'react';
@@ -29,46 +32,57 @@ const CreateEvent: React.FC = () => {
                 </IonToolbar>
 
                 <IonItem>
-                    <IonTitle>Add an Image</IonTitle>
+                    <IonLabel position="stacked">Add an Image</IonLabel>
                 </IonItem>
                 
+
                 <IonItem>
-                   <div> Event Name : </div>
-                    <IonInput placeholder=" Your Event Name"></IonInput>
+                    <IonLabel position="stacked">Event Name</IonLabel>
+                    <IonInput></IonInput>
                 </IonItem>
 
                 <IonItem>
-                   <div> Location : </div> 
-                   <IonInput placeholder=" Location of Event"></IonInput>
+                    <IonLabel position="stacked">Location</IonLabel>
+                    <IonInput></IonInput>
                 </IonItem>
+
+                <IonRow className="ion-padding-top">
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="stacked">Start Date</IonLabel>
+                            <IonDatetime max = "2099" displayFormat="MMM DD, YYYY"></IonDatetime>
+                        </IonItem>
+                    </IonCol>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="stacked">Start Time</IonLabel>
+                            <IonDatetime displayFormat="H:mm"></IonDatetime>
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
+
+                <IonRow>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="stacked">End Date</IonLabel>
+                            <IonDatetime max = "2099" displayFormat="MMM DD, YYYY"></IonDatetime>
+                        </IonItem>
+                    </IonCol>
+                    <IonCol>
+                        <IonItem>
+                            <IonLabel position="stacked">End Time</IonLabel>
+                            <IonDatetime displayFormat="H:mm"></IonDatetime>
+                        </IonItem>
+                    </IonCol>
+                </IonRow>
 
                 <IonItem>
-                    <div>Start Date</div>
-                    <IonDatetime max = "2099" displayFormat="MM DD YY" placeholder="Select Date">
-                    </IonDatetime>
+                    <IonLabel position="stacked">Description</IonLabel>
+                    <IonTextarea></IonTextarea>
                 </IonItem>
 
-                <IonItem>
-                <div>Start Time</div>
-                    <IonDatetime displayFormat="H:mm" placeholder="Select Time"></IonDatetime>
-                </IonItem>
 
-                <IonItem>
-                    <div>End Date</div>
-                    <IonDatetime max = "2099" displayFormat="MM DD YY" placeholder="Select Date">
-                    </IonDatetime>
-                </IonItem>
-
-                <IonItem>
-                <div>End Time</div>
-                    <IonDatetime displayFormat="H:mm" placeholder="Select Time"></IonDatetime>
-                </IonItem>
-
-                <IonItem>
-                    <IonTextarea>Description</IonTextarea>
-                </IonItem>
-
-                <IonButton expand="block">Register!</IonButton>
+                <IonButton expand="block">Register</IonButton>
 
             </IonHeader>
         </IonPage>

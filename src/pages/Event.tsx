@@ -28,7 +28,7 @@ const Event: React.FC = () => {
                     <IonTabButton>Attendees</IonTabButton>
                 </IonTabBar>
             </IonToolbar>
-            <h1 className="ion-text-center"> HackBeanPot </h1>
+            <h1 className="ion-text-center"> HackBeanpot </h1>
             <IonGrid>
                 <IonCol></IonCol>
                 <IonCol>
@@ -47,7 +47,7 @@ const Event: React.FC = () => {
                     </IonRow>
                     <IonRow>
                         <IonButton class="ion-align-self-center">
-                            Create Team!</IonButton>
+                            Create Team</IonButton>
                     </IonRow>
                 </IonCol>
                 <IonCol></IonCol>
