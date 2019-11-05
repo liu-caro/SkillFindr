@@ -11,6 +11,7 @@ import CreateProfile from './pages/CreateProfile';
 import Event from './pages/Event';
 import CreateEvent from './pages/CreateEvent';
 import Profile from './pages/Profile';
+import Attendees from './pages/Attendees';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -45,6 +46,7 @@ const App: React.FC = () => (
         <Route path="/profile" component={Profile} exact={true} />
         <Route path="/create-event" component={CreateEvent} exact={true} />
         <Route path="/register" component={RegisterEvent} exact={true} />
+        <Route path="/attendees" component={Attendees} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/login" />} />
 
       </IonRouterOutlet>

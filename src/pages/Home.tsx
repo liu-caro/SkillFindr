@@ -1,6 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon } from '@ionic/react';
 import React from 'react';
-// import add from "../images/add.png";
 import { RouteComponentProps } from 'react-router';
 import { add } from 'ionicons/icons';
 
