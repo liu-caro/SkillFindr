@@ -17,7 +17,8 @@ import {
   IonIcon,
   IonTextarea,
 } from '@ionic/react';
-import plus from "../images/plus.png";
+import profile from "../images/profile.jpg";
+import edit from "../images/edit.png";
 import React from 'react';
 
 const Profile: React.FC = () => {
@@ -33,7 +34,9 @@ const Profile: React.FC = () => {
       </IonHeader>
       <IonContent>
 
-        <IonIcon icon={plus} />
+        <IonIcon icon={profile} />
+        <IonIcon icon={edit} />
+
 
         <IonItem>
           <IonLabel position="stacked">Name</IonLabel>
