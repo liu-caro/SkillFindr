@@ -1,40 +1,54 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon, IonSearchbar, IonThumbnail, IonRow } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
-import { add } from 'ionicons/icons';
+import { add, person } from 'ionicons/icons';
+import HackBeanpot from '../images/hbp-logo.png';
+import CommunityGameJam from '../images/cgj-logo.png';
+import HackNYU from '../images/hnyu-logo.jpg';
 
 const Home: React.FC <RouteComponentProps> = (props) =>  {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Ionic Blank</IonTitle>
+          <IonRow>
+          <IonTitle>Upcoming Events</IonTitle>
+          <IonIcon icon={person} className="ion-margin-right"/>
+          </IonRow>
+        </IonToolbar>
+        <IonToolbar>
+        <IonSearchbar></IonSearchbar>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-        The world is your oyster.
-        <p>
-          If you get lost, the{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/">
-            docs
-          </a>{' '}
-          will be your guide.
-        </p>
+      {/* <IonSearchbar showCancelButton="focus"></IonSearchbar> */}
 
         <IonList>
-          <IonItem>
-            <IonCheckbox slot="start" />
+          <IonItem onClick={() => props.history.push('/event')}> 
+            <IonThumbnail slot="start">
+              <img src={HackBeanpot}/>
+            </IonThumbnail>
             <IonLabel>
-              <h1>Create Idea</h1>
-              <IonNote>Run Idea by Brandy</IonNote>
+              <h2>HackBeanpot</h2>
+              <p>Feb 7-9</p>
             </IonLabel>
-            <IonBadge color="success" slot="end">
-              5 Days
-            </IonBadge>
           </IonItem>
-          <IonItem onClick={() => props.history.push('/event')}>
+          <IonItem onClick={() => props.history.push('/event')}> 
+            <IonThumbnail slot="start">
+              <img src={CommunityGameJam}/>
+            </IonThumbnail>
             <IonLabel>
-              <h1>An Awesome Event</h1>
+              <h2>Community Game Jam</h2>
+              <p>Feb 15-16</p>
+            </IonLabel>
+          </IonItem>
+          <IonItem onClick={() => props.history.push('/event')}> 
+            <IonThumbnail slot="start">
+              <img src={HackNYU}/>
+            </IonThumbnail>
+            <IonLabel>
+              <h2>HackNYU</h2>
+              <p>Feb 15-17</p>
             </IonLabel>
           </IonItem>
         </IonList>

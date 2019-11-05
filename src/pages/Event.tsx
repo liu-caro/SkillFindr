@@ -12,10 +12,12 @@ import {
     IonTabButton,
     IonItem,
     IonCol,
+    IonImg,
 
 } from '@ionic/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HackBeanpot from '../images/hackBeanpot.png';
 
 const Event: React.FC = () => {
     return (
@@ -35,20 +37,20 @@ const Event: React.FC = () => {
                 <IonCol></IonCol>
                 <IonCol>
                     <IonRow>
-                      <img src = "hackBeanpot.png" alt = "hackBeanpot"></img>
+                      <img src = {HackBeanpot} alt = "HackBeanpot"></img>
+                      {/* <IonImg src = {HackBeanpot} alt = "HackBeanpot" height="80"/> */}
                     </IonRow>
-                    <IonRow>
-                        <IonButton class="ion-align-self-center">Register</IonButton>
+                    <IonRow class="ion-justify-content-center">
+                        <IonButton>Register</IonButton>
                     </IonRow>
                     <IonRow >
                         <IonItem text-center>
                             An independently-run Boston hackathon for curious students, hackers, makers, and beginners.
-                             Thanks for coming to HackBeanpot 2019!
                     </IonItem>
 
                     </IonRow>
-                    <IonRow>
-                        <IonButton class="ion-align-self-center">
+                    <IonRow class="ion-justify-content-center">
+                        <IonButton>
                             Create Team</IonButton>
                     </IonRow>
                 </IonCol>

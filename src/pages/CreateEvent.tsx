@@ -56,7 +56,7 @@ const CreateEvent: React.FC = () => {
                     <IonCol>
                         <IonItem>
                             <IonLabel position="stacked">Start Time</IonLabel>
-                            <IonDatetime displayFormat="H:mm"></IonDatetime>
+                            <IonDatetime displayFormat="h:mm A"></IonDatetime>
                         </IonItem>
                     </IonCol>
                 </IonRow>
@@ -71,7 +71,7 @@ const CreateEvent: React.FC = () => {
                     <IonCol>
                         <IonItem>
                             <IonLabel position="stacked">End Time</IonLabel>
-                            <IonDatetime displayFormat="H:mm"></IonDatetime>
+                            <IonDatetime displayFormat="h:mm A"></IonDatetime>
                         </IonItem>
                     </IonCol>
                 </IonRow>
