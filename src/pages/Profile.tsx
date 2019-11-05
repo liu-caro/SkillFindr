@@ -35,7 +35,7 @@ const Profile: React.FC = () => {
       <IonContent>
 
         <IonIcon icon={profile} />
-        <IonIcon icon={edit} />
+        <IonIcon slot="end" icon={edit} />
 
 
         <IonItem>
