@@ -1,25 +1,16 @@
-import {
-
-    IonContent,
-    IonHeader,
-    IonPage,
-
-    IonRow,
-    IonItem,
-    IonLabel,
-    IonInput,
-    IonButton
-  } from '@ionic/react';
+import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow} from '@ionic/react';
   import React from 'react';
+
+  import '../stylesheets/Login.css'
   
   const Login: React.FC = () => {
     return (
       <IonPage>
         <IonHeader>
         </IonHeader>
-        <IonContent>
+        <IonContent className="app-title">
             <h1 className="ion-text-center"> SkillFindr </h1>
-            <IonItem>
+            <IonItem className="ion-padding-top">
                 <IonLabel position="stacked">Email</IonLabel>
                 <IonInput></IonInput>
             </IonItem>
@@ -27,11 +18,15 @@ import {
                 <IonLabel position="stacked">Password</IonLabel>
                 <IonInput type="password"></IonInput>
             </IonItem>
+
+
             <IonRow align-items-center justify-content-center>
-              <IonButton>
-                Log in!
+              <IonButton >
+                Log in
               </IonButton>
-              </IonRow>
+            </IonRow>
+            
+
         </IonContent>
       </IonPage>
     );

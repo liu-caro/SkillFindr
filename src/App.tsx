@@ -5,6 +5,9 @@ import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 import NewItem from './pages/NewItem';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
+import RegisterEvent from './pages/RegisterEvent';
+import CreateProfile from './pages/CreateProfile';
 import Event from './pages/Event';
 import CreateEvent from './pages/CreateEvent';
 import Profile from './pages/Profile';
@@ -28,8 +31,6 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import RegisterEvent from './pages/RegisterEvent';
-import Signup from './pages/Signup';
 
 const App: React.FC = () => (
   <IonApp>
@@ -38,12 +39,13 @@ const App: React.FC = () => (
         <Route path="/home" component={Home} exact={true} />
         <Route path="/new" component={NewItem} exact={true} />
         <Route path="/login" component={Login} exact={true} /> 
-        <Route path="/event" component={Event} exact={true} />
         <Route path="/signup" component={Signup} exact={true} />
-        <Route path="/registerevent" component={RegisterEvent} exact={true} />
-        <Route path="/createevent" component={CreateEvent} exact={true} />
+        <Route path="/event" component={Event} exact={true} />
+        <Route path="/create-profile" component={CreateProfile} exact={true} />
         <Route path="/profile" component={Profile} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/create-event" component={CreateEvent} exact={true} />
+        <Route path="/register" component={RegisterEvent} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/login" />} />
 
       </IonRouterOutlet>
     </IonReactRouter>
