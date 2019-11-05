@@ -15,10 +15,13 @@ import {
     IonFab,
     IonFabButton,
     IonIcon,
+    IonTabBar,
+    IonTabButton,
 } from '@ionic/react';
 import add from "../images/add.png";
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
+import { Link } from 'react-router-dom';
   
 const NewItem: React.FC<RouteComponentProps> = (props) => {
     return (
@@ -32,6 +35,18 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonToolbar>
         </IonHeader>
         <IonContent>
+          
+          <IonToolbar>
+            <IonButtons slot="start">
+              <IonBackButton defaultHref="/home" />
+            </IonButtons>
+            <IonTabBar>
+              <IonTabButton>Event </IonTabButton>
+              <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
+              <IonTabButton>Attendees </IonTabButton>
+            </IonTabBar>
+          </IonToolbar>
+          
           <IonList>
             <IonItem>
               <IonCheckbox slot="start" />
