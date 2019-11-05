@@ -1,8 +1,9 @@
-import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow, IonList, IonDatetime} from '@ionic/react';
+import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow, IonList, IonDatetime, IonGrid} from '@ionic/react';
 
   import React from 'react';
 
   import '../stylesheets/Login.css'
+import { Link } from 'react-router-dom';
   
   const Login: React.FC = () => {
     return (
@@ -20,8 +21,15 @@ import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, I
                 <IonInput type="password"></IonInput>
             </IonItem>
 
+            <IonGrid>
             <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton routerLink="/home">
+                <p> New?</p> 
+                <Link to="/signup"> Sign Up Here</Link>
+            </IonRow>
+            </IonGrid>
+
+            <IonRow className="ion-justify-content-center ion-padding-top">
+              <IonButton expand="block" routerLink="/home">
                 Log in
               </IonButton>
             </IonRow>

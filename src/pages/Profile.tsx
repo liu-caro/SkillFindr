@@ -19,9 +19,9 @@ import {
         <IonHeader>
 
             <IonToolbar>
-                <IonButtons slot="start">
+                {/* <IonButtons slot="start">
                      <IonBackButton ></IonBackButton>
-                </IonButtons>
+                </IonButtons> */}
                 <IonButtons slot="end">
                     <IonButton>Edit</IonButton>
                 </IonButtons>
@@ -48,9 +48,9 @@ import {
                 </IonRow>  
 
                 <IonRow>
-                <IonCol> About Me : </IonCol>    
+                <IonCol> About Me </IonCol>    
                     <IonCol>
-                        I am a junior at northeastern university pursuing a degree 
+                        I am a junior at Northeastern university pursuing a degree 
                         in computer science and game development.
                     </IonCol>
                 </IonRow>  
@@ -63,6 +63,12 @@ import {
                     </IonCol>
                 </IonRow> 
             </IonGrid>
+
+            <IonRow className="ion-justify-content-center ion-padding-top">
+              <IonButton expand="block" routerLink="/home">
+                Browse Events
+              </IonButton>
+            </IonRow>
 
 
         </IonContent>

@@ -17,7 +17,7 @@ import {
 } from '@ionic/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HackBeanpot from '../images/hackBeanpot.png';
+import HackBeanpot from '../images/hackbeanpot.png';
 
 const Event: React.FC = () => {
     return (

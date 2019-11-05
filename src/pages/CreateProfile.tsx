@@ -13,10 +13,13 @@ import {
     IonCol,
     IonItem,
     IonThumbnail,
-    IonImg,
     IonLabel,
+    IonIcon,
+    IonTextarea,
 } from '@ionic/react';
+import plus from "../images/plus.png";
 import React from 'react';
+import { add, create, person } from 'ionicons/icons';
 
 const CreateProfile: React.FC = () => {
     return (
@@ -31,24 +34,27 @@ const CreateProfile: React.FC = () => {
             </IonHeader>
             <IonContent>
                 <IonItem>
-                    <IonThumbnail slot="start">
-                        <IonImg src="src/images/add.png" />
-                    </IonThumbnail>
-                    <IonLabel></IonLabel>
+                    <IonLabel position="stacked">Name</IonLabel>
+                    <IonInput/>
+                </IonItem>
+                    <IonItem>
+                    <IonLabel position="stacked">Skills</IonLabel>
+                    <IonTextarea placeholder="HTML, CSS, JS, Photoshop, etc." />
                 </IonItem>
 
-                <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Skills <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Bio <IonInput placeholder="Enter Input"></IonInput> </div>
-                
+                    <IonItem>
+                    <IonLabel position="stacked">Bio</IonLabel>
+                    <IonTextarea placeholder="I am a programmer sometimes." />
+                </IonItem>
+
                 <IonGrid>
                     <IonRow>
-                        <IonCol>
-                            <IonButton expand="block">Submit</IonButton>
-                        </IonCol>
-                        <IonCol>
-                            <IonButton expand="block">Cancel</IonButton>
-                        </IonCol>
+                    <IonCol>
+                        <IonButton expand="block" color="medium">Cancel</IonButton>
+                    </IonCol>
+                    <IonCol>
+                        <IonButton expand="block" routerLink="/profile">Create Profile</IonButton>
+                    </IonCol>
                     </IonRow>
                 </IonGrid>
             </IonContent>

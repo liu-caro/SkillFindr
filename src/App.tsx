@@ -12,6 +12,9 @@ import Event from './pages/Event';
 import CreateEvent from './pages/CreateEvent';
 import Profile from './pages/Profile';
 import Attendees from './pages/Attendees';
+import ProposeIdea from './pages/ProposeIdea';
+import YourIdea from './pages/YourIdea';
+import Ideas from './pages/Ideas';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -41,14 +44,17 @@ const App: React.FC = () => (
         <Route path="/new" component={NewItem} exact={true} />
         <Route path="/login" component={Login} exact={true} /> 
         <Route path="/signup" component={Signup} exact={true} />
-        <Route path="/event" component={Event} exact={true} />
         <Route path="/create-profile" component={CreateProfile} exact={true} />
         <Route path="/profile" component={Profile} exact={true} />
+        <Route path="/event" component={Event} exact={true} />
         <Route path="/create-event" component={CreateEvent} exact={true} />
         <Route path="/register" component={RegisterEvent} exact={true} />
         <Route path="/attendees" component={Attendees} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/login" />} />
-
+        <Route path="/propose-idea" component={ProposeIdea} exact={true} />
+        <Route path="/your-idea" component={YourIdea} exact={true} />
+        <Route path="/ideas" component={Ideas} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/login" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

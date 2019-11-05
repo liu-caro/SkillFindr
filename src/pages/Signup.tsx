@@ -10,34 +10,49 @@ import {
     IonButton,
     IonGrid,
     IonRow,
-    IonCol
+    IonCol,
+    IonItem,
+    IonLabel
   } from '@ionic/react';
   import React from 'react';
+import { RouteComponentProps } from 'react-router';
   
-  const Signup: React.FC = () => {
+  const Signup: React.FC <RouteComponentProps> = (props) =>  {
     return (
       <IonPage>
         <IonHeader>
           <IonToolbar>
             <IonButtons slot="start">
-              <IonBackButton defaultHref="/home" />
+              <IonBackButton defaultHref="/login" />
             </IonButtons>
-            <IonTitle>Sign Up!</IonTitle>
+            <IonTitle>Sign Up</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent>
-          <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
-          <div>Email <IonInput placeholder="Enter Input"></IonInput> </div>
-          <div>Password <IonInput placeholder="Enter Input"></IonInput> </div>
-          <div>Confirm Password <IonInput placeholder="Enter Input"></IonInput> </div>
+          <IonItem className="ion-padding-top">
+                <IonLabel position="stacked">Name</IonLabel>
+                <IonInput></IonInput>
+            </IonItem>
+            <IonItem>
+                <IonLabel position="stacked">Email</IonLabel>
+                <IonInput></IonInput>
+            </IonItem>
+            <IonItem>
+                <IonLabel position="stacked">Password</IonLabel>
+                <IonInput type="password"></IonInput>
+            </IonItem>
+            <IonItem>
+                <IonLabel position="stacked">Confirm Password</IonLabel>
+                <IonInput type="password"></IonInput>
+            </IonItem>
 
           <IonGrid>
             <IonRow>
               <IonCol>
-                <IonButton expand="block">Sign Up!</IonButton>
+                <IonButton expand="block" color="medium">Cancel</IonButton>
               </IonCol>
               <IonCol>
-                <IonButton expand="block">Cancel</IonButton>
+                <IonButton expand="block" routerLink="/create-profile">Next</IonButton>
               </IonCol>
             </IonRow>
           </IonGrid>
