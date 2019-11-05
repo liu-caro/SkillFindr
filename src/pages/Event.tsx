@@ -11,7 +11,8 @@ import {
     IonTabBar,
     IonTabButton,
     IonItem,
-    IonCol
+    IonCol,
+
 } from '@ionic/react';
 import React from 'react';
 
@@ -33,7 +34,7 @@ const Event: React.FC = () => {
                 <IonCol></IonCol>
                 <IonCol>
                     <IonRow>
-
+                      <img src = "hackBeanPot.png" alt = "hackBeanPot"></img>
                     </IonRow>
                     <IonRow>
                         <IonButton class="ion-align-self-center">Register</IonButton>
