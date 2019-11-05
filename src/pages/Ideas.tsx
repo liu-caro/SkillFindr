@@ -18,7 +18,7 @@ import {
     IonTabBar,
     IonTabButton,
 } from '@ionic/react';
-import add from "../images/add.png";
+import { add } from 'ionicons/icons';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -42,14 +42,13 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
             </IonButtons>
             <IonTabBar>
               <IonTabButton>Event </IonTabButton>
-              <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
+              <IonTabButton>Ideas </IonTabButton>
               <IonTabButton>Attendees </IonTabButton>
             </IonTabBar>
           </IonToolbar>
           
           <IonList>
-            <IonItem>
-              <IonCheckbox slot="start" />
+            <IonItem onClick={() => props.history.push('/your-idea')}>
               <IonLabel>
                 <h1>Salem</h1>
                 <IonNote>Hidden role card game</IonNote>
@@ -61,7 +60,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonList>
 
           <IonFab vertical="bottom" horizontal="end" slot="fixed">
-            <IonFabButton onClick={() => props.history.push('/new')}>
+            <IonFabButton onClick={() => props.history.push('/propose-idea')}>
               <IonIcon icon={add} />
             </IonFabButton>
           </IonFab>

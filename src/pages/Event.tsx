@@ -28,7 +28,7 @@ const Event: React.FC <RouteComponentProps> = (props) =>   {
                 </IonButtons>
                 <IonTabBar>
                     <IonTabButton>Event </IonTabButton>
-                    <IonTabButton>Ideas</IonTabButton>
+                    <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
                     <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
                 </IonTabBar>
             </IonToolbar>

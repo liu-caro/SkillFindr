@@ -82,7 +82,7 @@ const CreateEvent: React.FC = () => {
                 </IonItem>
 
 
-                <IonButton expand="block">Register</IonButton>
+                <IonButton expand="block" routerLink="/event">Create Event</IonButton>
 
             </IonHeader>
         </IonPage>

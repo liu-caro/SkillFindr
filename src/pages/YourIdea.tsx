@@ -18,7 +18,7 @@ import {
   IonTextarea,
   IonImg,
 } from '@ionic/react';
-import profile from "../images/profile.jpg";
+import Profile from "../images/profile.jpg";
 import edit from "../images/edit.png";
 import React from 'react';
 
@@ -43,8 +43,6 @@ const YourIdea: React.FC = () => {
           <IonLabel position="stacked">Salem</IonLabel>
           <IonLabel position="stacked">Hidden role card game</IonLabel>
         </IonItem>
-
-        <IonImg src="images/edit.png" /> <IonImg src="images/edit.png" /> <IonImg src="images/edit.png" />
 
         <IonGrid>
           <IonRow>
