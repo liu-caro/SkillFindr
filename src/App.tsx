@@ -9,6 +9,9 @@ import Signup from './pages/Signup';
 import RegisterEvent from './pages/RegisterEvent';
 import CreateProfile from './pages/CreateProfile';
 import ProposeIdea from './pages/ProposeIdea';
+import YourIdea from './pages/YourIdea';
+import Ideas from './pages/Ideas';
+import Profile from './pages/Profile';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -42,6 +45,9 @@ const App: React.FC = () => (
         <Route path="/registerevent" component={RegisterEvent} exact={true} />
         <Route path="/createprofile" component={CreateProfile} exact={true} />
         <Route path="/propose-idea" component={ProposeIdea} exact={true} />
+        <Route path="/your-idea" component={YourIdea} exact={true} />
+        <Route path="/ideas" component={Ideas} exact={true} />
+        <Route path="/profile" component={Profile} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
