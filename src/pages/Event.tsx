@@ -15,6 +15,7 @@ import {
 
 } from '@ionic/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Event: React.FC = () => {
     return (
@@ -26,7 +27,7 @@ const Event: React.FC = () => {
                 <IonTabBar>
                     <IonTabButton>Event </IonTabButton>
                     <IonTabButton>Ideas</IonTabButton>
-                    <IonTabButton>Attendees</IonTabButton>
+                    <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
                 </IonTabBar>
             </IonToolbar>
             <h1 className="ion-text-center"> HackBeanpot </h1>
@@ -34,7 +35,7 @@ const Event: React.FC = () => {
                 <IonCol></IonCol>
                 <IonCol>
                     <IonRow>
-                      <img src = "hackBeanPot.png" alt = "hackBeanPot"></img>
+                      <img src = "hackBeanpot.png" alt = "hackBeanpot"></img>
                     </IonRow>
                     <IonRow>
                         <IonButton class="ion-align-self-center">Register</IonButton>
