@@ -12,12 +12,11 @@ import {
     IonTabButton,
     IonItem,
     IonCol,
-    IonImg,
 
 } from '@ionic/react';
 import React from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
-import HackBeanpot from '../images/hackbeanpot.png';
+import HackBeanpot from '../images/hackBeanPot.png';
 
 const Event: React.FC <RouteComponentProps> = (props) =>   {
     return (

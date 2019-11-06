@@ -12,14 +12,12 @@ import {
     IonRow,
     IonCol,
     IonItem,
-    IonThumbnail,
     IonLabel,
-    IonIcon,
     IonTextarea,
 } from '@ionic/react';
-import plus from "../images/plus.png";
+//import plus from "../images/plus.png";
 import React from 'react';
-import { add, create, person } from 'ionicons/icons';
+//import { add, create, person } from 'ionicons/icons';
 
 const CreateProfile: React.FC = () => {
     return (

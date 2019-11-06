@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonFab, IonFabButton, IonIcon, IonSearchbar, IonThumbnail, IonRow, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem,  IonLabel,  IonFab, IonFabButton, IonIcon, IonSearchbar, IonThumbnail,  IonButton } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { add, person } from 'ionicons/icons';
@@ -27,7 +27,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
         <IonList>
           <IonItem onClick={() => props.history.push('/event')}> 
             <IonThumbnail slot="start">
-              <img src={HackBeanpot}/>
+              <img src={HackBeanpot} alt = "hackBeanPot"/>
             </IonThumbnail>
             <IonLabel>
               <h2>HackBeanpot</h2>
@@ -36,7 +36,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
           </IonItem>
           <IonItem onClick={() => props.history.push('/event')}> 
             <IonThumbnail slot="start">
-              <img src={CommunityGameJam}/>
+              <img src={CommunityGameJam} alt = "CommunityGameJam"/>
             </IonThumbnail>
             <IonLabel>
               <h2>Community Game Jam</h2>
@@ -45,7 +45,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
           </IonItem>
           <IonItem onClick={() => props.history.push('/event')}> 
             <IonThumbnail slot="start">
-              <img src={HackNYU}/>
+              <img src={HackNYU} alt = "HackNYU"/>
             </IonThumbnail>
             <IonLabel>
               <h2>HackNYU</h2>

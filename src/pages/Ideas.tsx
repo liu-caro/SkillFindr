@@ -8,7 +8,6 @@ import {
     IonToolbar,
     IonList,
     IonItem,
-    IonCheckbox,
     IonLabel,
     IonNote,
     IonBadge,
@@ -21,7 +20,7 @@ import {
 import { add } from 'ionicons/icons';
 import React from 'react';
 import { RouteComponentProps } from 'react-router';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
   
 const NewItem: React.FC<RouteComponentProps> = (props) => {
     return (

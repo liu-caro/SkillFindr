@@ -1,4 +1,4 @@
-import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput, IonIcon, IonRow, IonList, IonDatetime, IonGrid} from '@ionic/react';
+import {IonButton, IonContent,IonHeader, IonPage, IonItem, IonLabel, IonInput,  IonRow, IonGrid} from '@ionic/react';
 
   import React from 'react';
   import { RouteComponentProps } from 'react-router';
@@ -10,6 +10,7 @@ import { Link, RouteComponentProps } from 'react-router-dom';
   const Login: React.FC <RouteComponentProps> = (props) =>   {
     return (
       <IonPage>
+        
         <IonHeader>
         </IonHeader>
         <IonContent className="app-title">
@@ -29,6 +30,12 @@ import { Link, RouteComponentProps } from 'react-router-dom';
                 <Link to="/signup"> Sign Up Here</Link>
             </IonRow>
             </IonGrid>
+            
+
+
+            <IonRow align-items-center justify-content-center>
+              <IonButton onClick={() => props.history.push('/Home')}>
+                /</IonButton>
 
 
             <IonRow align-items-center justify-content-center>
@@ -40,10 +47,10 @@ import { Link, RouteComponentProps } from 'react-router-dom';
                 Log in
               </IonButton>
             </IonRow>
-            
+            </IonRow>
+            </IonContent>
+            </IonPage>
 
-        </IonContent>
-      </IonPage>
     );
   };
   export default Login;
