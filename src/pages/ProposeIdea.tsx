@@ -20,6 +20,7 @@ import {
     IonThumbnail,
     IonImg,
     IonLabel,
+    IonTextarea,
 } from '@ionic/react';
 import React from 'react';
 
@@ -31,32 +32,41 @@ const ProposeIdea: React.FC = () => {
                     <IonButtons slot="start">
                         <IonBackButton defaultHref="/home" />
                     </IonButtons>
-                    <IonTitle>Create Profile</IonTitle>
+                    <IonTitle>Propose an Idea</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
             <IonContent>
-                <IonList>
-                    <IonItem>
-                        <IonThumbnail slot="start">
-                            <IonImg src="images/add.png" />
-                        </IonThumbnail>
-                        <IonLabel></IonLabel>
-                    </IonItem>
-                </IonList>
+                <IonItem className="ion-padding-top">
+                    <IonLabel position="stacked">Name of Project</IonLabel>
+                    <IonInput></IonInput>
+                </IonItem>
+                <IonItem>
+                    <IonLabel position="stacked">Description</IonLabel>
+                    <IonTextarea></IonTextarea>
+                </IonItem>
+                <IonItem>
+                    <IonLabel position="stacked">Number of Team Members</IonLabel>
+                    <IonInput></IonInput>
+                </IonItem>
+                <IonItem>
+                    <IonLabel position="stacked">Skills Needed</IonLabel>
+                    <IonInput></IonInput>
+                </IonItem>
+                <IonItem>
+                    <IonLabel position="stacked">Your Role</IonLabel>
+                    <IonInput></IonInput>
+                </IonItem>
 
-                <div>Name <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Skills <IonInput placeholder="Enter Input"></IonInput> </div>
-                <div>Bio <IonInput placeholder="Enter Input"></IonInput> </div>
 
                 <IonGrid>
                     <IonRow>
-                        <IonCol>
-                            <IonButton expand="block">Submit</IonButton>
-                        </IonCol>
-                        <IonCol>
-                            <IonButton expand="block">Cancel</IonButton>
-                        </IonCol>
+                    <IonCol>
+                        <IonButton expand="block" color="medium">Cancel</IonButton>
+                    </IonCol>
+                    <IonCol>
+                        <IonButton expand="block" routerLink="/your-idea">Submit</IonButton>
+                    </IonCol>
                     </IonRow>
                 </IonGrid>
             </IonContent>

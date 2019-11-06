@@ -12,11 +12,14 @@ import {
     IonTabButton,
     IonItem,
     IonCol,
+    IonImg,
 
 } from '@ionic/react';
 import React from 'react';
+import { Link, RouteComponentProps } from 'react-router-dom';
+import HackBeanpot from '../images/hackbeanpot.png';
 
-const Event: React.FC = () => {
+const Event: React.FC <RouteComponentProps> = (props) =>   {
     return (
         <IonPage>
             <IonToolbar>
@@ -25,30 +28,30 @@ const Event: React.FC = () => {
                 </IonButtons>
                 <IonTabBar>
                     <IonTabButton>Event </IonTabButton>
-                    <IonTabButton>Ideas</IonTabButton>
-                    <IonTabButton>Attendees</IonTabButton>
+                    <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
+                    <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
                 </IonTabBar>
             </IonToolbar>
-            <h1 className="ion-text-center"> HackBeanPot </h1>
+            <h1 className="ion-text-center"> HackBeanpot </h1>
             <IonGrid>
                 <IonCol></IonCol>
                 <IonCol>
                     <IonRow>
-                      <img src = "hackBeanPot.png" alt = "hackBeanPot"></img>
+                      <img src = {HackBeanpot} alt = "HackBeanpot"></img>
+                      {/* <IonImg src = {HackBeanpot} alt = "HackBeanpot" height="80"/> */}
                     </IonRow>
-                    <IonRow>
-                        <IonButton class="ion-align-self-center">Register</IonButton>
+                    <IonRow class="ion-justify-content-center">
+                        <IonButton onClick={() => props.history.push('/register')}>Register</IonButton>
                     </IonRow>
                     <IonRow >
                         <IonItem text-center>
                             An independently-run Boston hackathon for curious students, hackers, makers, and beginners.
-                             Thanks for coming to HackBeanpot 2019!
                     </IonItem>
 
                     </IonRow>
-                    <IonRow>
-                        <IonButton class="ion-align-self-center">
-                            Create Team!</IonButton>
+                    <IonRow class="ion-justify-content-center">
+                        <IonButton>
+                            Create Team</IonButton>
                     </IonRow>
                 </IonCol>
                 <IonCol></IonCol>
