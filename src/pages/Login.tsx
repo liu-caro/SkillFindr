@@ -7,10 +7,11 @@ import {IonButton,
      IonInput,
       IonRow} from '@ionic/react';
   import React from 'react';
+  import { RouteComponentProps } from 'react-router';
 
   import '../stylesheets/Login.css'
   
-  const Login: React.FC = () => {
+  const Login: React.FC <RouteComponentProps> = (props) =>{
     return (
       <IonPage>
         <IonHeader>
@@ -28,7 +29,7 @@ import {IonButton,
 
 
             <IonRow align-items-center justify-content-center>
-              <IonButton >
+              <IonButton onClick={() => props.history.push('/Home')}>
                 Log in
               </IonButton>
             </IonRow>
