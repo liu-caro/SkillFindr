@@ -1,6 +1,5 @@
 import {
   IonBackButton,
-  IonInput,
   IonButtons,
   IonContent,
   IonHeader,
@@ -12,13 +11,10 @@ import {
   IonRow,
   IonCol,
   IonItem,
-  IonThumbnail,
   IonLabel,
   IonIcon,
-  IonTextarea,
-  IonImg,
 } from '@ionic/react';
-import Profile from "../images/profile.jpg";
+//import Profile from "../images/profile.jpg";
 import edit from "../images/edit.png";
 import React from 'react';
 
