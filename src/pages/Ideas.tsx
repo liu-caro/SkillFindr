@@ -2,9 +2,7 @@ import {
     IonBackButton,
     IonButtons,
     IonContent,
-    IonHeader,
     IonPage,
-    IonTitle,
     IonToolbar,
     IonList,
     IonItem,
@@ -19,20 +17,13 @@ import {
 } from '@ionic/react';
 import { add } from 'ionicons/icons';
 import React from 'react';
-import { RouteComponentProps } from 'react-router';
+import { RouteComponentProps, Link } from 'react-router-dom';
 //import { Link } from 'react-router-dom';
   
 const NewItem: React.FC<RouteComponentProps> = (props) => {
     return (
       <IonPage>
-        <IonHeader>
-          <IonToolbar>
-            <IonButtons slot="start">
-              <IonBackButton defaultHref="/home" />
-            </IonButtons>
-            <IonTitle>Ideas</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+
         <IonContent>
           
           <IonToolbar>
@@ -40,9 +31,9 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
               <IonBackButton defaultHref="/home" />
             </IonButtons>
             <IonTabBar>
-              <IonTabButton>Event </IonTabButton>
-              <IonTabButton>Ideas </IonTabButton>
-              <IonTabButton>Attendees </IonTabButton>
+            <IonTabButton><Link to="/event">Ideas</Link></IonTabButton>
+                <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
+                <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
             </IonTabBar>
           </IonToolbar>
           
@@ -54,6 +45,26 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
               </IonLabel>
               <IonBadge color="light" slot="end">
                 1/4 members
+            </IonBadge>
+            </IonItem>
+
+            <IonItem onClick={() => props.history.push('/your-idea')}>
+              <IonLabel>
+                <h1>Let's Make a Date</h1>
+                <IonNote>You cook food for a date.</IonNote>
+              </IonLabel>
+              <IonBadge color="light" slot="end">
+                3/4 members
+            </IonBadge>
+            </IonItem>
+
+            <IonItem onClick={() => props.history.push('/your-idea')}>
+              <IonLabel>
+                <h1>Help Hero</h1>
+                <IonNote>3D platformer with heros</IonNote>
+              </IonLabel>
+              <IonBadge color="light" slot="end">
+                2/4 members
             </IonBadge>
             </IonItem>
           </IonList>
