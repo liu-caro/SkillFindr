@@ -32,17 +32,18 @@ import { Link, RouteComponentProps } from 'react-router-dom';
             
 
 
-            <IonRow align-items-center justify-content-center>
+            {/* <IonRow align-items-center justify-content-center>
               <IonButton onClick={() => props.history.push('/Home')}>
-                /</IonButton>
+                Log in
+                </IonButton> */}
 
             <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" routerLink="/home">
+              <IonButton expand="block" onClick={() => props.history.push('/Home')}>
 
                 Log in
               </IonButton>
             </IonRow>
-            </IonRow>
+            {/* </IonRow> */}
             </IonContent>
             </IonPage>
 
