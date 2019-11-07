@@ -1,7 +1,0 @@
-{
-  "name": "skillFindr",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}

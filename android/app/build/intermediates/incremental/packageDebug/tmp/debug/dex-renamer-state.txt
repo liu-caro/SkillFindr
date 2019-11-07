@@ -1,0 +1,22 @@
+#Thu Nov 07 04:27:46 EST 2019
+path.1=classes.dex
+path.0=classes.dex
+renamed.6=classes7.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.6=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/2
+base.5=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/1
+base.4=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/4
+base.3=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/0
+base.2=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/3
+base.1=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/6
+base.0=/Users/carolineliu/Documents/SkillFindr/skillFindr/android/app/build/intermediates/transforms/dexMerger/debug/5
+path.6=classes.dex
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex
