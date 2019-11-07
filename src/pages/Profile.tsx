@@ -9,10 +9,14 @@ import {
     IonContent,
     IonGrid,
     IonRow,
-    IonCol} from '@ionic/react';
+    IonCol,
+    IonIcon} from '@ionic/react';
   import React from 'react';
+  import Jamie from '../images/jamie.jpeg';
+import { RouteComponentProps } from 'react-router';
+import { create } from 'ionicons/icons';
 
-  const Profile: React.FC = () => {
+  const Profile: React.FC<RouteComponentProps> = (props) =>  {
 
     return (
         <IonPage>
@@ -23,7 +27,9 @@ import {
                      <IonBackButton defaultHref="/home"></IonBackButton>
                 </IonButtons>
                 <IonButtons slot="end">
-                    <IonButton routerLink="/create-profile">Edit</IonButton>
+                    <IonButton onClick={() => props.history.push('/edit-profile')}>
+                        <IonIcon icon={create} />
+                    </IonButton>
                 </IonButtons>
             </IonToolbar>
         </IonHeader>
@@ -42,7 +48,7 @@ import {
                 <IonRow>
                  <IonCol></IonCol>    
                     <IonCol>
-                        Image :)
+                    <img src = {Jamie} alt = "Jamie"></img>
                     </IonCol>
                  <IonCol></IonCol>   
                 </IonRow>  
@@ -65,7 +71,7 @@ import {
             </IonGrid>
 
             <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" routerLink="/home">
+              <IonButton expand="block" onClick={() => props.history.push('/home')}>
                 Browse Events
               </IonButton>
             </IonRow>

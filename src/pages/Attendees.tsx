@@ -14,6 +14,10 @@ IonLabel,
 import React from 'react';
 
 import { RouteComponentProps, Link } from 'react-router-dom';
+import Jamie from '../images/jamie.jpeg';
+import Cari from '../images/cari.jpeg';
+import Cam from '../images/cam.jpeg';
+import Boba from '../images/boba.jpg';
 
 const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
     return (
@@ -33,31 +37,42 @@ const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
 
             <IonContent className="ion-padding">
 
+              300 Attendees
+
             <IonList>
-          <IonItem onClick={() => props.history.push('/event')}> 
+            <IonItem onClick={() => props.history.push('/profile')}> 
             <IonAvatar slot="start">
-              {/* <img src={HackBeanpot} alt = "hackBeanPot"/> */}
+              <img src={Jamie} alt = "Jamie"/>
             </IonAvatar>
             <IonLabel>
-              <h2>Riley Narno</h2>
+              <h2>Jamie Camera</h2>
               <p>Programmer</p>
             </IonLabel>
           </IonItem>
           <IonItem onClick={() => props.history.push('/event')}> 
             <IonAvatar slot="start">
-              {/* <img src={CommunityGameJam} alt = "CommunityGameJam"/> */}
+              <img src={Cari} alt = "Cari"/>
             </IonAvatar>
             <IonLabel>
-              <h2>Isabel Lorenta</h2>
+              <h2>Cari Liu</h2>
+              <p>Programmer</p>
+            </IonLabel>
+          </IonItem>
+          <IonItem onClick={() => props.history.push('/event')}> 
+            <IonAvatar slot="start">
+              <img src={Cam} alt = "Cam"/>
+            </IonAvatar>
+            <IonLabel>
+              <h2>Cam Perry</h2>
               <p>Artist</p>
             </IonLabel>
           </IonItem>
           <IonItem onClick={() => props.history.push('/event')}> 
             <IonAvatar slot="start">
-              {/* <img src={HackNYU} alt = "HackNYU"/> */}
+              <img src={Boba} alt = "Boba"/>
             </IonAvatar>
             <IonLabel>
-              <h2>Hugh Freank</h2>
+              <h2>Boba Baggins</h2>
               <p>Programmer</p>
             </IonLabel>
           </IonItem>

@@ -15,11 +15,12 @@ import {
     IonLabel,
     IonTextarea,
 } from '@ionic/react';
-//import plus from "../images/plus.png";
-import React from 'react';
-//import { add, create, person } from 'ionicons/icons';
 
-const EditProfile: React.FC = () => {
+import React from 'react';
+import { RouteComponentProps } from 'react-router';
+
+
+const EditProfile: React.FC <RouteComponentProps> = (props) =>  {
     return (
         <IonPage>
             <IonHeader>
@@ -33,17 +34,21 @@ const EditProfile: React.FC = () => {
             <IonContent>
                 <IonItem>
                     <IonLabel position="stacked">Name</IonLabel>
-                    <IonTextarea value="Greg Goeres" />
+                    <IonTextarea value="Jamie Camera" />
                 </IonItem>
-                    <IonItem>
-                    <IonLabel position="stacked">Skills</IonLabel>
-                    <IonTextarea value="HTML, CSS, JS, Photoshop, etc." />
+                                    
+                                    <IonItem>
+                    <IonLabel position="stacked">Bio</IonLabel>
+                    <IonTextarea value="I am a junior at Northeastern university pursuing a degree 
+                        in computer science and game development." />
                 </IonItem>
 
                     <IonItem>
-                    <IonLabel position="stacked">Bio</IonLabel>
-                    <IonTextarea value="I am a programmer sometimes." />
+                    <IonLabel position="stacked">Skills</IonLabel>
+                    <IonTextarea value="C#, C++, Game Design" />
                 </IonItem>
+
+
 
                 <IonGrid>
                     <IonRow>
@@ -51,7 +56,7 @@ const EditProfile: React.FC = () => {
                         <IonButton expand="block" color="medium">Cancel</IonButton>
                     </IonCol>
                     <IonCol>
-                        <IonButton expand="block" routerLink="/profile">Edit Profile</IonButton>
+                        <IonButton expand="block" onClick={() => props.history.push('/profile')}>Save Changes</IonButton>
                     </IonCol>
                     </IonRow>
                 </IonGrid>

@@ -33,17 +33,19 @@ const CreateProfile: React.FC = () => {
             <IonContent>
                 <IonItem>
                     <IonLabel position="stacked">Name</IonLabel>
-                    <IonInput/>
-                </IonItem>
-                    <IonItem>
-                    <IonLabel position="stacked">Skills</IonLabel>
-                    <IonTextarea placeholder="HTML, CSS, JS, Photoshop, etc." />
+                    <IonInput placeholder="Jane Doe" />
                 </IonItem>
 
                     <IonItem>
                     <IonLabel position="stacked">Bio</IonLabel>
                     <IonTextarea placeholder="I am a programmer sometimes." />
                 </IonItem>
+                
+                    <IonItem>
+                    <IonLabel position="stacked">Skills</IonLabel>
+                    <IonTextarea placeholder="HTML, CSS, JS, Photoshop, etc." />
+                </IonItem>
+
 
                 <IonGrid>
                     <IonRow>
