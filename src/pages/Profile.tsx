@@ -27,7 +27,7 @@ import { create } from 'ionicons/icons';
                      <IonBackButton defaultHref="/home"></IonBackButton>
                 </IonButtons>
                 <IonButtons slot="end">
-                    <IonButton onClick={() => props.history.push('/edit-profile')}>
+                    <IonButton routerLink="/edit-profile">
                         <IonIcon icon={create} />
                     </IonButton>
                 </IonButtons>
@@ -71,7 +71,7 @@ import { create } from 'ionicons/icons';
             </IonGrid>
 
             <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" onClick={() => props.history.push('/home')}>
+              <IonButton expand="block" routerLink="/home">
                 Browse Events
               </IonButton>
             </IonRow>

@@ -40,7 +40,7 @@ const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
               300 Attendees
 
             <IonList>
-            <IonItem onClick={() => props.history.push('/profile')}> 
+            <IonItem routerLink="/profile"> 
             <IonAvatar slot="start">
               <img src={Jamie} alt = "Jamie"/>
             </IonAvatar>

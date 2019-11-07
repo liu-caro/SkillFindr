@@ -40,13 +40,13 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonToolbar>
 
           <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" onClick={() => props.history.push('/propose-idea')}>
+              <IonButton expand="block" routerLink="/create-profile">
                 New Idea
               </IonButton>
             </IonRow>
           
           <IonList>
-            <IonItem onClick={() => props.history.push('/your-idea')}>
+            <IonItem routerLink="/your-idea">
               <IonLabel>
                 <h1>Salem</h1>
                 <IonNote>Hidden role card game</IonNote>
@@ -78,7 +78,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonList>
 
           <IonFab vertical="bottom" horizontal="end" slot="fixed">
-            <IonFabButton onClick={() => props.history.push('/propose-idea')}>
+            <IonFabButton routerLink="/propose-idea">
               <IonIcon icon={add} />
             </IonFabButton>
           </IonFab>

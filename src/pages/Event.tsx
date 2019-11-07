@@ -39,10 +39,10 @@ const Event: React.FC <RouteComponentProps> = (props) =>   {
                       <img src = {HackBeanpot} alt = "HackBeanpot"></img>
                     </IonRow>
                     <IonRow class="ion-justify-content-center">
-                        <IonButton onClick={() => props.history.push('/register')}>Register</IonButton>
+                        <IonButton routerLink="/register">Register</IonButton>
                     </IonRow>
                     <IonRow class="ion-justify-content-center">
-                        <IonButton onClick={() => props.history.push('/propose-idea')}>
+                        <IonButton routerLink="/propose-idea">
                             Create Team</IonButton>
                     </IonRow>
 

@@ -11,7 +11,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton slot="end" onClick={() => props.history.push('/profile')}>
+          <IonButton slot="end" routerLink="/profile">
             <IonIcon icon={person}/>
           </IonButton>
           <IonTitle>Upcoming Events</IonTitle>
@@ -25,7 +25,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
       {/* <IonSearchbar showCancelButton="focus"></IonSearchbar> */}
 
         <IonList>
-          <IonItem onClick={() => props.history.push('/event')}> 
+          <IonItem routerLink="/event"> 
             <IonThumbnail slot="start">
               <img src={HackBeanpot} alt = "hackBeanPot"/>
             </IonThumbnail>
@@ -56,7 +56,7 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
 
 
         <IonFab vertical="bottom" horizontal="end" slot="fixed">
-          <IonFabButton onClick={() => props.history.push('/create-event')}>
+          <IonFabButton routerLink="/create-event">
           <IonIcon icon={add} />
           </IonFabButton>
         </IonFab>

@@ -38,7 +38,7 @@ import { Link, RouteComponentProps } from 'react-router-dom';
                 </IonButton> */}
 
             <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" onClick={() => props.history.push('/Home')}>
+              <IonButton expand="block" routerLink="/home">
 
                 Log in
               </IonButton>

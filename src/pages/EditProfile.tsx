@@ -56,7 +56,7 @@ const EditProfile: React.FC <RouteComponentProps> = (props) =>  {
                         <IonButton expand="block" color="medium">Cancel</IonButton>
                     </IonCol>
                     <IonCol>
-                        <IonButton expand="block" onClick={() => props.history.push('/profile')}>Save Changes</IonButton>
+                        <IonButton expand="block" routerLink="/profile">Save Changes</IonButton>
                     </IonCol>
                     </IonRow>
                 </IonGrid>
