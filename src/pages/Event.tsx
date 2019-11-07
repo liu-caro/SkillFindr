@@ -37,21 +37,22 @@ const Event: React.FC <RouteComponentProps> = (props) =>   {
                 <IonCol>
                     <IonRow>
                       <img src = {HackBeanpot} alt = "HackBeanpot"></img>
-                      {/* <IonImg src = {HackBeanpot} alt = "HackBeanpot" height="80"/> */}
                     </IonRow>
                     <IonRow class="ion-justify-content-center">
                         <IonButton onClick={() => props.history.push('/register')}>Register</IonButton>
                     </IonRow>
+                    <IonRow class="ion-justify-content-center">
+                        <IonButton onClick={() => props.history.push('/propose-idea')}>
+                            Create Team</IonButton>
+                    </IonRow>
+
                     <IonRow >
                         <IonItem text-center>
                             An independently-run Boston hackathon for curious students, hackers, makers, and beginners.
                     </IonItem>
 
                     </IonRow>
-                    <IonRow class="ion-justify-content-center">
-                        <IonButton>
-                            Create Team</IonButton>
-                    </IonRow>
+
                 </IonCol>
                 <IonCol></IonCol>
             </IonGrid>
