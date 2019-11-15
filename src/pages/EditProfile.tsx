@@ -1,6 +1,5 @@
 import {
     IonBackButton,
-    IonInput,
     IonButtons,
     IonContent,
     IonHeader,
@@ -15,6 +14,8 @@ import {
     IonLabel,
     IonTextarea,
 } from '@ionic/react';
+
+
 //import plus from "../images/plus.png";
 import React from 'react';
 //import { add, create, person } from 'ionicons/icons';
