@@ -20,43 +20,45 @@ import HackBeanpot from '../images/hackBeanPot.png';
 
 const Event: React.FC <RouteComponentProps> = (props) =>   {
     return (
-        <IonPage>
-            <IonToolbar>
-                <IonButtons slot="start">
-                    <IonBackButton defaultHref="/home" />
-                </IonButtons>
-                <IonTabBar>
-                    <IonTabButton>Event </IonTabButton>
-                    <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
-                    <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
-                </IonTabBar>
-            </IonToolbar>
-            <h1 className="ion-text-center"> HackBeanpot </h1>
-            <IonGrid>
-                <IonCol></IonCol>
-                <IonCol>
-                    <IonRow>
-                      <img src = {HackBeanpot} alt = "HackBeanpot"></img>
-                    </IonRow>
-                    <IonRow class="ion-justify-content-center">
-                        <IonButton routerLink="/register">Register</IonButton>
-                    </IonRow>
-                    <IonRow class="ion-justify-content-center">
-                        <IonButton routerLink="/propose-idea">
-                            Create Team</IonButton>
-                    </IonRow>
+      <IonPage>
+        <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/home" />
+          </IonButtons>
+          <IonTabBar>
+            <IonTabButton>Event </IonTabButton>
+            <IonTabButton>
+              <Link to="/ideas">Ideas</Link>
+            </IonTabButton>
+            <IonTabButton>
+              <Link to="/attendees">Attendees</Link>{" "}
+            </IonTabButton>
+          </IonTabBar>
+        </IonToolbar>
+        <h1 className="ion-text-center"> HackBeanpot </h1>
+        <IonGrid>
+          <IonCol></IonCol>
+          <IonCol>
+            <IonRow>
+              <img src={HackBeanpot} alt="HackBeanpot"></img>
+            </IonRow>
+            <IonRow class="ion-justify-content-center">
+              <IonButton routerLink="/register">Register</IonButton>
+            </IonRow>
+            <IonRow class="ion-justify-content-center">
+              <IonButton routerLink="/propose-idea">Create Team</IonButton>
+            </IonRow>
 
-                    <IonRow >
-                        <IonItem text-center>
-                            An independently-run Boston hackathon for curious students, hackers, makers, and beginners.
-                    </IonItem>
-
-                    </IonRow>
-
-                </IonCol>
-                <IonCol></IonCol>
-            </IonGrid>
-        </IonPage>
+            <IonRow>
+              <IonItem text-center>
+                An independently-run Boston hackathon for curious students,
+                hackers, makers, and beginners.
+              </IonItem>
+            </IonRow>
+          </IonCol>
+          <IonCol></IonCol>
+        </IonGrid>
+      </IonPage>
     );
 };
 export default Event;
