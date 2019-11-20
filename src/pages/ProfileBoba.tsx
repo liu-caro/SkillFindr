@@ -12,13 +12,11 @@ import {
     IonCol,
     IonIcon} from '@ionic/react';
   import React from 'react';
-  import Jamie from '../images/jamie.jpeg';
+  import Boba from '../images/boba.jpg';
 import { RouteComponentProps } from 'react-router';
 import { create } from 'ionicons/icons';
 
-const ifFirstTime = true;
-
-  const Profile: React.FC<RouteComponentProps> = (props) =>  {
+  const ProfileBoba: React.FC<RouteComponentProps> = (props) =>  {
 
     return (
         <IonPage>
@@ -27,11 +25,6 @@ const ifFirstTime = true;
             <IonToolbar>
                 <IonButtons slot="start">
                      <IonBackButton defaultHref="/home"></IonBackButton>
-                </IonButtons>
-                <IonButtons slot="end">
-                    <IonButton routerLink="/edit-profile">
-                        <IonIcon icon={create} />
-                    </IonButton>
                 </IonButtons>
             </IonToolbar>
         </IonHeader>
@@ -42,7 +35,7 @@ const ifFirstTime = true;
                 <IonRow>
                     <IonCol></IonCol>
                     <IonCol>
-                        <IonTitle size = "large">Jamie Camera</IonTitle>
+                        <IonTitle size = "large">Boba Baggins</IonTitle>
                     </IonCol>
                     <IonCol></IonCol>                    
                 </IonRow>   
@@ -50,7 +43,7 @@ const ifFirstTime = true;
                 <IonRow>
                  <IonCol></IonCol>    
                     <IonCol>
-                    <img src = {Jamie} alt = "Jamie"></img>
+                    <img src = {Boba} alt = "Boba"></img>
                     </IonCol>
                  <IonCol></IonCol>   
                 </IonRow>  
@@ -58,8 +51,7 @@ const ifFirstTime = true;
                 <IonRow>
                 <IonCol> About Me </IonCol>    
                     <IonCol>
-                        I am a junior at Northeastern University pursuing a degree 
-                        in Computer Science and Game Development.
+                        I am a cat. Cats go rawr.
                     </IonCol>
                 </IonRow>  
 
@@ -67,20 +59,10 @@ const ifFirstTime = true;
                 <IonRow>
                 <IonCol> My Skills </IonCol>    
                     <IonCol>
-                        C#, C++, Game Design
+                        I wants the pets. I boops the snoot. I helps with puzzles.
                     </IonCol>
                 </IonRow> 
             </IonGrid>
-
-            <IonRow className="ion-justify-content-center ion-padding-top">
-                Now that your profile has been created... Let's Get Started!
-            </IonRow>
-
-            <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" routerLink="/home">
-                Browse Events
-              </IonButton>
-            </IonRow>
 
 
         </IonContent>
@@ -89,4 +71,4 @@ const ifFirstTime = true;
     );
 };
 
-export default Profile;
+export default ProfileBoba;

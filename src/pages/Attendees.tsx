@@ -51,7 +51,7 @@ const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
                 <p>Programmer</p>
               </IonLabel>
             </IonItem>
-            <IonItem onClick={() => props.history.push("/event")}>
+            <IonItem routerLink="/cari">
               <IonAvatar slot="start">
                 <img src={Cari} alt="Cari" />
               </IonAvatar>
@@ -60,7 +60,7 @@ const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
                 <p>Programmer</p>
               </IonLabel>
             </IonItem>
-            <IonItem onClick={() => props.history.push("/event")}>
+            <IonItem routerLink="/cam">
               <IonAvatar slot="start">
                 <img src={Cam} alt="Cam" />
               </IonAvatar>
@@ -69,7 +69,7 @@ const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
                 <p>Artist</p>
               </IonLabel>
             </IonItem>
-            <IonItem onClick={() => props.history.push("/event")}>
+            <IonItem routerLink="/boba">
               <IonAvatar slot="start">
                 <img src={Boba} alt="Boba" />
               </IonAvatar>
