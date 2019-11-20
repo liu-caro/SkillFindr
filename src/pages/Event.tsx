@@ -12,18 +12,22 @@ import {
     IonTabButton,
     IonItem,
     IonCol,
+    IonIcon,
 
 } from '@ionic/react';
 import React from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
 import HackBeanpot from '../images/hackBeanPot.png';
+import { arrowBack } from 'ionicons/icons';
 
 const Event: React.FC <RouteComponentProps> = (props) =>   {
     return (
       <IonPage>
         <IonToolbar>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/home" />
+          <IonButton routerLink="/home">
+          <IonIcon icon={arrowBack} />
+          </IonButton>
           </IonButtons>
           <IonTabBar>
             <IonTabButton>Event </IonTabButton>

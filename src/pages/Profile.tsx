@@ -73,6 +73,10 @@ const ifFirstTime = true;
             </IonGrid>
 
             <IonRow className="ion-justify-content-center ion-padding-top">
+                Now that your profile has been created... Let's Get Started!
+            </IonRow>
+
+            <IonRow className="ion-justify-content-center ion-padding-top">
               <IonButton expand="block" routerLink="/home">
                 Browse Events
               </IonButton>
