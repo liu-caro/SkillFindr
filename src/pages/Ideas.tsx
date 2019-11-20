@@ -40,7 +40,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonToolbar>
 
           <IonRow className="ion-justify-content-center ion-padding-top">
-              <IonButton expand="block" routerLink="/create-profile">
+              <IonButton expand="block" routerLink="/propose-idea">
                 New Idea
               </IonButton>
             </IonRow>

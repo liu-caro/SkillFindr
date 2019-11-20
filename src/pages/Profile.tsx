@@ -16,6 +16,8 @@ import {
 import { RouteComponentProps } from 'react-router';
 import { create } from 'ionicons/icons';
 
+const ifFirstTime = true;
+
   const Profile: React.FC<RouteComponentProps> = (props) =>  {
 
     return (
