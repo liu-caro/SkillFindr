@@ -9,10 +9,13 @@ import {
     IonContent,
     IonGrid,
     IonRow,
-    IonCol} from '@ionic/react';
+    IonCol,
+    IonFooter} from '@ionic/react';
   import React from 'react';
+  
+  import { RouteComponentProps } from 'react-router-dom';
 
-  const Profile: React.FC = () => {
+  const Profile: React.FC <RouteComponentProps> = (props) =>  {
 
     return (
         <IonPage>
@@ -69,6 +72,10 @@ import {
                 Browse Events
               </IonButton>
             </IonRow>
+
+            <IonFooter>
+                <IonButton routerLink="/login">Logout</IonButton>
+            </IonFooter>
 
 
         </IonContent>

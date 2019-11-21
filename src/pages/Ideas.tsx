@@ -31,7 +31,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
               <IonBackButton defaultHref="/home" />
             </IonButtons>
             <IonTabBar>
-            <IonTabButton><Link to="/event">Ideas</Link></IonTabButton>
+            <IonTabButton><Link to="/event">Event</Link></IonTabButton>
                 <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
                 <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
             </IonTabBar>
@@ -54,7 +54,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
                 <IonNote>You cook food for a date.</IonNote>
               </IonLabel>
               <IonBadge color="light" slot="end">
-                3/4 members
+                2/4 Members 
             </IonBadge>
             </IonItem>
 

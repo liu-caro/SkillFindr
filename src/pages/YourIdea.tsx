@@ -65,7 +65,7 @@ const YourIdea: React.FC = () => {
           <IonRow>
             <IonCol></IonCol>
             <IonCol>
-              <IonButton>Add a Team Member</IonButton>
+              <IonButton>Join this team</IonButton>
               </IonCol>
             <IonCol></IonCol>
             
