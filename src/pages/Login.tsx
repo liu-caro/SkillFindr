@@ -33,24 +33,20 @@ const Login: React.FC<RouteComponentProps> = (props) => {
 
 
 
-        <IonRow align-items-center justify-content-center>
+        {/* <IonRow align-items-center justify-content-center> */}
 
-          <IonRow align-items-center justify-content-center>
-            <IonButton onClick={() => props.history.push('/Home')}>
+          {/* <IonRow align-items-center justify-content-center>
+            <IonButton onClick={() => props.history.push('/Home')}> */}
 
               <IonRow className="ion-justify-content-center ion-padding-top">
                 <IonButton expand="block" routerLink="/home">
 
                   Log in
               </IonButton>
-              </IonRow>
-
-              </IonButton>
-              </IonRow>
-              </IonRow>
-              </IonContent>
-              </IonPage>
-
+            </IonRow>
+            {/* </IonRow> */}
+            </IonContent>
+            </IonPage>
 
         );
       };

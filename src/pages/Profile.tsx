@@ -10,12 +10,15 @@ import {
     IonGrid,
     IonRow,
     IonCol,
-    IonFooter} from '@ionic/react';
+    IonIcon} from '@ionic/react';
   import React from 'react';
-  
-  import { RouteComponentProps } from 'react-router-dom';
+  import Jamie from '../images/jamie.jpeg';
+import { RouteComponentProps } from 'react-router';
+import { create } from 'ionicons/icons';
 
-  const Profile: React.FC <RouteComponentProps> = (props) =>  {
+const ifFirstTime = true;
+
+  const Profile: React.FC<RouteComponentProps> = (props) =>  {
 
     return (
         <IonPage>
@@ -26,7 +29,9 @@ import {
                      <IonBackButton defaultHref="/home"></IonBackButton>
                 </IonButtons>
                 <IonButtons slot="end">
-                    <IonButton routerLink="/create-profile">Edit</IonButton>
+                    <IonButton routerLink="/edit-profile">
+                        <IonIcon icon={create} />
+                    </IonButton>
                 </IonButtons>
             </IonToolbar>
         </IonHeader>
@@ -45,7 +50,7 @@ import {
                 <IonRow>
                  <IonCol></IonCol>    
                     <IonCol>
-                        Image :)
+                    <img src = {Jamie} alt = "Jamie"></img>
                     </IonCol>
                  <IonCol></IonCol>   
                 </IonRow>  
@@ -53,8 +58,8 @@ import {
                 <IonRow>
                 <IonCol> About Me </IonCol>    
                     <IonCol>
-                        I am a junior at Northeastern university pursuing a degree 
-                        in computer science and game development.
+                        I am a junior at Northeastern University pursuing a degree 
+                        in Computer Science and Game Development.
                     </IonCol>
                 </IonRow>  
 
@@ -66,6 +71,10 @@ import {
                     </IonCol>
                 </IonRow> 
             </IonGrid>
+
+            <IonRow className="ion-justify-content-center ion-padding-top">
+                Now that your profile has been created... Let's Get Started!
+            </IonRow>
 
             <IonRow className="ion-justify-content-center ion-padding-top">
               <IonButton expand="block" routerLink="/home">

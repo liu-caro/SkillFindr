@@ -11,41 +11,40 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton slot="end" onClick={() => props.history.push('/profile')}>
-            <IonIcon icon={person}/>
+          <IonButton slot="end" routerLink="/profile">
+            <IonIcon icon={person} />
           </IonButton>
           <IonTitle>Upcoming Events</IonTitle>
-
         </IonToolbar>
         <IonToolbar>
-        <IonSearchbar></IonSearchbar>
+          <IonSearchbar></IonSearchbar>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-      {/* <IonSearchbar showCancelButton="focus"></IonSearchbar> */}
+        {/* <IonSearchbar showCancelButton="focus"></IonSearchbar> */}
 
         <IonList>
-          <IonItem onClick={() => props.history.push('/event')}> 
+          <IonItem routerLink="/event">
             <IonThumbnail slot="start">
-              <img src={HackBeanpot} alt = "hackBeanPot"/>
+              <img src={HackBeanpot} alt="hackBeanPot" />
             </IonThumbnail>
             <IonLabel>
               <h2>HackBeanpot</h2>
               <p>Feb 7-9</p>
             </IonLabel>
           </IonItem>
-          <IonItem onClick={() => props.history.push('/event')}> 
+          <IonItem onClick={() => props.history.push("/event")}>
             <IonThumbnail slot="start">
-              <img src={CommunityGameJam} alt = "CommunityGameJam"/>
+              <img src={CommunityGameJam} alt="CommunityGameJam" />
             </IonThumbnail>
             <IonLabel>
               <h2>Community Game Jam</h2>
               <p>Feb 15-16</p>
             </IonLabel>
           </IonItem>
-          <IonItem onClick={() => props.history.push('/event')}> 
+          <IonItem onClick={() => props.history.push("/event")}>
             <IonThumbnail slot="start">
-              <img src={HackNYU} alt = "HackNYU"/>
+              <img src={HackNYU} alt="HackNYU" />
             </IonThumbnail>
             <IonLabel>
               <h2>HackNYU</h2>
@@ -54,13 +53,11 @@ const Home: React.FC <RouteComponentProps> = (props) =>  {
           </IonItem>
         </IonList>
 
-
         <IonFab vertical="bottom" horizontal="end" slot="fixed">
-          <IonFabButton onClick={() => props.history.push('/create-event')}>
-          <IonIcon icon={add} />
+          <IonFabButton routerLink="/create-event">
+            <IonIcon icon={add} />
           </IonFabButton>
         </IonFab>
-
       </IonContent>
     </IonPage>
   );

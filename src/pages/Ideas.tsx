@@ -14,6 +14,8 @@ import {
     IonIcon,
     IonTabBar,
     IonTabButton,
+    IonRow,
+    IonButton,
 } from '@ionic/react';
 import { add } from 'ionicons/icons';
 import React from 'react';
@@ -36,9 +38,15 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
                 <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
             </IonTabBar>
           </IonToolbar>
+
+          <IonRow className="ion-justify-content-center ion-padding-top">
+              <IonButton expand="block" routerLink="/propose-idea">
+                New Idea
+              </IonButton>
+            </IonRow>
           
           <IonList>
-            <IonItem onClick={() => props.history.push('/your-idea')}>
+            <IonItem routerLink="/your-idea">
               <IonLabel>
                 <h1>Salem</h1>
                 <IonNote>Hidden role card game</IonNote>
@@ -61,7 +69,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
             <IonItem onClick={() => props.history.push('/your-idea')}>
               <IonLabel>
                 <h1>Help Hero</h1>
-                <IonNote>3D platformer with heros</IonNote>
+                <IonNote>3D platformer with heroes</IonNote>
               </IonLabel>
               <IonBadge color="light" slot="end">
                 2/4 members
@@ -70,7 +78,7 @@ const NewItem: React.FC<RouteComponentProps> = (props) => {
           </IonList>
 
           <IonFab vertical="bottom" horizontal="end" slot="fixed">
-            <IonFabButton onClick={() => props.history.push('/propose-idea')}>
+            <IonFabButton routerLink="/propose-idea">
               <IonIcon icon={add} />
             </IonFabButton>
           </IonFab>

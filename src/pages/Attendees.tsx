@@ -14,57 +14,73 @@ IonLabel,
 import React from 'react';
 
 import { RouteComponentProps, Link } from 'react-router-dom';
+import Jamie from '../images/jamie.jpeg';
+import Cari from '../images/cari.jpeg';
+import Cam from '../images/cam.jpeg';
+import Boba from '../images/boba.jpg';
 
 const Attendees:  React.FC <RouteComponentProps> = (props) =>  {
     return (
-        <IonPage>
+      <IonPage>
+        <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/home" />
+          </IonButtons>
+          <IonTabBar>
+            <IonTabButton>
+              <Link to="/event">Event</Link>
+            </IonTabButton>
+            <IonTabButton>
+              <Link to="/ideas">Ideas</Link>
+            </IonTabButton>
+            <IonTabButton>
+              <Link to="/attendees">Attendees</Link>{" "}
+            </IonTabButton>
+          </IonTabBar>
+        </IonToolbar>
 
-            <IonToolbar>
-                <IonButtons slot="start">
-                    <IonBackButton defaultHref="/home" />
-                </IonButtons>
-                <IonTabBar>
-                <IonTabButton><Link to="/event">Event</Link></IonTabButton>
-                <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
-                <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
-
-                </IonTabBar>
-            </IonToolbar>
-
-            <IonContent className="ion-padding">
-
-            <IonList>
-          <IonItem onClick={() => props.history.push('/event')}> 
-            <IonAvatar slot="start">
-              {/* <img src={HackBeanpot} alt = "hackBeanPot"/> */}
-            </IonAvatar>
-            <IonLabel>
-              <h2>Riley Narno</h2>
-              <p>Programmer</p>
-            </IonLabel>
-          </IonItem>
-          <IonItem onClick={() => props.history.push('/event')}> 
-            <IonAvatar slot="start">
-              {/* <img src={CommunityGameJam} alt = "CommunityGameJam"/> */}
-            </IonAvatar>
-            <IonLabel>
-              <h2>Isabel Lorenta</h2>
-              <p>Artist</p>
-            </IonLabel>
-          </IonItem>
-          <IonItem onClick={() => props.history.push('/event')}> 
-            <IonAvatar slot="start">
-              {/* <img src={HackNYU} alt = "HackNYU"/> */}
-            </IonAvatar>
-            <IonLabel>
-              <h2>Hugh Freank</h2>
-              <p>Programmer</p>
-            </IonLabel>
-          </IonItem>
-        </IonList>
+        <IonContent className="ion-padding">
+          300 Attendees
+          <IonList>
+            <IonItem routerLink="/profile">
+              <IonAvatar slot="start">
+                <img src={Jamie} alt="Jamie" />
+              </IonAvatar>
+              <IonLabel>
+                <h2>Jamie Camera</h2>
+                <p>Programmer</p>
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/cari">
+              <IonAvatar slot="start">
+                <img src={Cari} alt="Cari" />
+              </IonAvatar>
+              <IonLabel>
+                <h2>Cari Liu</h2>
+                <p>Programmer</p>
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/cam">
+              <IonAvatar slot="start">
+                <img src={Cam} alt="Cam" />
+              </IonAvatar>
+              <IonLabel>
+                <h2>Cam Perry</h2>
+                <p>Artist</p>
+              </IonLabel>
+            </IonItem>
+            <IonItem routerLink="/boba">
+              <IonAvatar slot="start">
+                <img src={Boba} alt="Boba" />
+              </IonAvatar>
+              <IonLabel>
+                <h2>Boba Baggins</h2>
+                <p>Programmer</p>
+              </IonLabel>
+            </IonItem>
+          </IonList>
         </IonContent>
-
-        </IonPage>
+      </IonPage>
     );
 };
 

@@ -13,10 +13,13 @@ import {
   IonItem,
   IonLabel,
   IonIcon,
+  IonTabBar,
+  IonTabButton,
 } from '@ionic/react';
 //import Profile from "../images/profile.jpg";
 import edit from "../images/edit.png";
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const YourIdea: React.FC = () => {
   return (
@@ -26,19 +29,26 @@ const YourIdea: React.FC = () => {
           <IonButtons slot="start">
             <IonBackButton defaultHref="/home" />
           </IonButtons>
-          <IonTitle>Your Idea</IonTitle>
+          <IonTabBar>
+          <IonTabButton><Link to="/event">Event</Link></IonTabButton>
+          <IonTabButton><Link to="/ideas">Ideas</Link></IonTabButton>
+          <IonTabButton><Link to="/attendees">Attendees</Link> </IonTabButton>
+
+          </IonTabBar>
+          
         </IonToolbar>
       </IonHeader>
       <IonContent>
-
+        <IonRow className="ion-justify-content-center">
+      <h1 className="ion-text-center">Your Idea</h1>
+      </IonRow> 
         
         <IonIcon slot="end" icon={edit} />
 
 
-        <IonItem>
-          <IonLabel position="stacked">Salem</IonLabel>
-          <IonLabel position="stacked">Hidden role card game</IonLabel>
-        </IonItem>
+          <h2>Salem</h2>
+          <h3>Hidden role card game</h3>
+
 
         <IonGrid>
           <IonRow>

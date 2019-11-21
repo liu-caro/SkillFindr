@@ -16,6 +16,9 @@ import ProposeIdea from './pages/ProposeIdea';
 import YourIdea from './pages/YourIdea';
 import Ideas from './pages/Ideas';
 import EditProfile from './pages/EditProfile';
+import ProfileCari from './pages/ProfileCari';
+import ProfileCam from './pages/ProfileCam';
+import ProfileBoba from './pages/ProfileBoba';
 
 
 /* Core CSS required for Ionic components to work properly */
@@ -50,6 +53,9 @@ const App: React.FC = () => (
         <Route path="/signup" component={Signup} exact={true} />
         <Route path="/create-profile" component={CreateProfile} exact={true} />
         <Route path="/profile" component={Profile} exact={true} />
+        <Route path="/cari" component={ProfileCari} exact={true} />
+        <Route path="/cam" component={ProfileCam} exact={true} />
+        <Route path="/boba" component={ProfileBoba} exact={true} />
         <Route path="/event" component={Event} exact={true} />
         <Route path="/create-event" component={CreateEvent} exact={true} />
         <Route path="/register" component={RegisterEvent} exact={true} />

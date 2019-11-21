@@ -58,7 +58,6 @@ const RegisterEvent: React.FC = () => {
           <IonList>
             <IonRadioGroup>
               <IonListHeader>How did you hear about this event?</IonListHeader>
-              
               <IonItem>
                 <IonLabel>Facebook</IonLabel>
                 <IonRadio value="Facebook" />
@@ -81,9 +80,10 @@ const RegisterEvent: React.FC = () => {
 
             </IonRadioGroup>
           </IonList>
-          
-          <div>If you selected other, please write in where you heard about the event here:</div>
+
+          <IonListHeader>If you selected other, please write in where you heard about the event here:</IonListHeader>
           <IonInput placeholder="Enter Input"></IonInput>
+
 
           <IonGrid>
             <IonRow>
